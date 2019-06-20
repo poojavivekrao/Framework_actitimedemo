@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="script.Users">
+        <methods>
+          <include name="method3"/>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- script.Users -->
+      <class name="script.logout">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="method2"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- script.logout -->
+      <class name="script.loginscript">
+        <methods>
+          <include name="postcondition"/>
+          <include name="postcondition"/>
+          <include name="method1"/>
+          <include name="precondition"/>
+          <include name="precondition"/>
+        </methods>
+      </class> <!-- script.loginscript -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
